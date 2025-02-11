@@ -35,7 +35,7 @@ def process_timer_request(update: Update, context: CallbackContext):
         return
 
     text = update.message.text
-    if not re.search(r'\bкплощкзпокпоз\b', text, re.IGNORECASE):
+    if not re.search(r'\Рома\b', text, re.IGNORECASE):
         return
 
     # Формируем запрос к ИИ
