@@ -19,8 +19,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-GROUP_CHAT_ID = -1001758042522
-# GROUP_CHAT_ID = -1001185311407
+# GROUP_CHAT_ID = -1001758042522
+GROUP_CHAT_ID = -1001185311407
 
 def process_timer_request(update: Update, context: CallbackContext):
     """
