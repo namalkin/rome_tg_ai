@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    image: python:3.9-alpine  # Используем готовый образ Python
+    container_name: telegram-bot  # Имя контейнера для удобства
+    working_dir: /app  # Рабочая директория внутри контейнера
+    volumes:
+      - .:/app  
+    env_file:
+      - .env
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && python main.py"
